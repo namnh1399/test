@@ -1,7 +1,8 @@
 public class HinhChuNhat {
     private double chieuDai;
     private double chieuRong;
-private double chieuCao;
+    private double chieuCao;
+
     public HinhChuNhat(double chieuRong, double chieuDai, double chieuCao) {
         this.chieuDai = chieuDai;
         this.chieuRong = chieuRong;
@@ -17,12 +18,14 @@ private double chieuCao;
         double chuVi = (chieuDai + chieuRong) * 2;
         return chuVi;
     }
-public double tinhTheTich(){
+
+    public double tinhTheTich() {
         double theTich = chieuDai * chieuRong * chieuCao;
         return theTich;
-}
+    }
+
     public static void main(String[] args) {
-        HinhChuNhat hinhChuNhat = new HinhChuNhat(7, 10, 8);
+        HinhChuNhat hinhChuNhat = new HinhChuNhat(7, 10, 9);
         double ketqua = hinhChuNhat.tinhDienTich();
         System.out.print(ketqua);
     }
